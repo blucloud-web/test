@@ -1,0 +1,93 @@
+/**
+ * Family Banking System - Custom CSS
+ */
+
+:root {
+    --bs-font-sans-serif: 'Vazirmatn', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.font-vazir {
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+
+.fs-7 {
+    font-size: 0.85rem;
+}
+
+.text-purple {
+    color: #6f42c1 !important;
+}
+
+.bg-purple {
+    background-color: #6f42c1 !important;
+}
+
+/* Sidebar Styling */
+#sidebar-wrapper {
+    transition: margin 0.25s ease-out;
+}
+
+@media (max-width: 768px) {
+    #sidebar-wrapper {
+        margin-right: -260px;
+        position: fixed;
+        z-index: 1040;
+    }
+
+    #sidebar-wrapper.toggled {
+        margin-right: 0;
+    }
+}
+
+.list-group-item-action:hover {
+    background-color: #f1f5f9;
+}
+
+.card {
+    border-radius: 0.75rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-rounded {
+    border-radius: 50rem;
+}
+
+.badge {
+    font-weight: 500;
+    padding: 0.4em 0.7em;
+}
+
+/* Print Utilities for Receipts */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #printableArea, #printableArea * {
+        visibility: visible;
+    }
+
+    #printableArea {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+}

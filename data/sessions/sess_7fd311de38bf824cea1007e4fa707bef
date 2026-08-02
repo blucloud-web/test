@@ -1,0 +1,1 @@
+flash_messages|a:2:{i:0;a:2:{s:4:"type";s:6:"danger";s:7:"message";s:66:"خطای امنیتی: توکن CSRF معتبر نمی‌باشد.";}i:1;a:2:{s:4:"type";s:7:"warning";s:7:"message";s:69:"لطفاً ابتدا وارد حساب کاربری خود شوید.";}}

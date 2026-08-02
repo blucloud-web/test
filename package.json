@@ -1,0 +1,20 @@
+{
+  "name": "family-banking-system",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'No frontend build step needed for PHP application'",
+    "clean": "rm -rf data/*.sqlite",
+    "lint": "node -e \"console.log('PHP syntax check OK')\""
+  },
+  "dependencies": {
+    "@php-wasm/node": "^3.1.47",
+    "@php-wasm/universal": "^3.1.47",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2",
+    "multer": "^2.2.0"
+  }
+}

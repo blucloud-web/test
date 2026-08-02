@@ -1,0 +1,6 @@
+{
+  "name": "سیستم بانکداری خانوادگی",
+  "description": "سیستم مدیریت بانکداری خانوادگی، حساب‌ها، واریز، برداشت، انتقال، وام، سپرده، صندوق مرکزی و گزارشات",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
